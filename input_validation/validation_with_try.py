@@ -20,12 +20,15 @@ def age():
 try:
     def average(score1, score2, score3):
         """ Calculates an average, and returns an float"""
+        if score1 < 0:
+            raise ValueError
+
         sum = score1 + score2 + score3
         average_scores = sum / 3
 
         return average_scores
-except:
-    print("An exception occurred")
+except ValueError:
+    print("An exception occurred, a negative number was used")
 
 if __name__ == '__main__':
     name = names()
