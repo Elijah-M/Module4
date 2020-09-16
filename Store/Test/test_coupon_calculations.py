@@ -9,12 +9,12 @@ from Store.coupon_calculations import calculate_price
 
 class MyTestCase(unittest.TestCase):
     def test_calculate_price(self):
-        self.assertAlmostEqual(calculate_price(10, 5, .1), 10.72, places=1)
-        self.assertAlmostEqual(calculate_price(10, 5, .15), 10.46, places=1)
-        self.assertAlmostEqual(calculate_price(10, 5, .2), 10.19, places=1)
-        self.assertAlmostEqual(calculate_price(10, 10, .1), 5.95, places=1)
-        self.assertAlmostEqual(calculate_price(10, 9, .15), 6.85, places=1)
-        self.assertAlmostEqual(calculate_price(10, 8, .2), 7.65, places=1)
+        self.assertAlmostEqual(calculate_price(20, 5, .1), 22.26, places=1)
+        self.assertAlmostEqual(calculate_price(20, 5, .15), 21.47, places=1)
+        self.assertAlmostEqual(calculate_price(20, 5, .2), 20.67, places=1)
+        self.assertAlmostEqual(calculate_price(20, 10, .1), 17.49, places=1)
+        self.assertAlmostEqual(calculate_price(15, 9, .15), 11.36, places=1)
+        self.assertAlmostEqual(calculate_price(11, 8, .2), 8.49, places=1)
 
 if __name__ == '__main__':
     unittest.main()
