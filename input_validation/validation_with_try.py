@@ -22,7 +22,7 @@ try:
         """ Calculates an average, and returns an float"""
 
         # if the 1st or 2nd number is negative a ValueError is created
-        if score1 < 0:
+        if score1 < 0 or score2 < 0:
             raise ValueError
 
         sum = score1 + score2 + score3
