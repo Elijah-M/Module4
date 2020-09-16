@@ -20,6 +20,8 @@ def age():
 try:
     def average(score1, score2, score3):
         """ Calculates an average, and returns an float"""
+
+        # if the 1st or 2nd number is negative a ValueError is created
         if score1 < 0:
             raise ValueError
 
